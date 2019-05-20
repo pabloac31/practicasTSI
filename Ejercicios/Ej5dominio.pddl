@@ -26,6 +26,7 @@
     (is-bikini ?x - item); true si el objeto 'x' es un bikini
     (is-forest ?x - zone); true si la zona 'x' es bosque
     (is-water ?x - zone); true si la zona 'x' es agua
+    (is-cliff ?x - zone); true si la zona 'x' es un precipicio
     (sneakers ?x - Player); true si el jugador 'x' tiene unas zapatillas
     (bikini ?x - Player); true si el jugador 'x' tiene un bikini
     )
@@ -64,7 +65,7 @@
      (:action go; Moverse entre zonas
        :parameters (?p - Player ?z - orientation ?x ?y - zone)
        :precondition (OR
-         (AND (oriented ?p ?z) (at ?x ?p) (connected ?x ?y ?z) (not(is-forest ?y)) (not(is-water ?y)))
+         (AND (oriented ?p ?z) (at ?x ?p) (connected ?x ?y ?z) (not(is-forest ?y)) (not(is-water ?y)) (not(is-cliff ?y)))
          (AND (oriented ?p ?z) (at ?x ?p) (connected ?x ?y ?z) (is-forest ?y) (sneakers ?p))
          (AND (oriented ?p ?z) (at ?x ?p) (connected ?x ?y ?z) (is-water ?y) (bikini ?p)))
        :effect (and (not (at ?x ?p)) (at ?y ?p) (increase (total-cost) (distance ?x ?y)))

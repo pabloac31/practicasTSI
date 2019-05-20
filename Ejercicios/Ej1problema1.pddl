@@ -39,4 +39,4 @@
     (supplied princesa1)
 ))
 
-(:metric minimize (total-cost)))
+)

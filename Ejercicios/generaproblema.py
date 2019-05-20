@@ -190,6 +190,7 @@ def read_data_v3(data, objs, init, goal):
     if len(precipicio) > 0:
         for z in precipicio:
             aux += (z + " ")
+            init.append("(is-cliff " + z + ")")
         objs.append(aux + "- Precipicio")
     aux = ""
     if len(arena) > 0:
@@ -317,6 +318,7 @@ def read_data_v4(data, objs, init, goal, min_score, ejer, pts):
     if len(precipicio) > 0:
         for z in precipicio:
             aux += (z + " ")
+            init.append("(is-cliff " + z + ")")
         objs.append(aux + "- Precipicio")
     aux = ""
     if len(arena) > 0:
@@ -542,6 +544,9 @@ for linea in goal:
     f_out.write("    " + linea + "\n")
 
 f_out.write("))\n\n")
-f_out.write("(:metric minimize (total-cost)))")
+if ej > 1:
+    f_out.write("(:metric minimize (total-cost)))")
+else:
+    f_out.write(")")
 
 f_out.close()

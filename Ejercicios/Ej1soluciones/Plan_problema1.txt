@@ -1,0 +1,71 @@
+
+ff: parsing domain file
+domain 'EJERCICIO1' defined
+ ... done.
+ff: parsing problem file
+problem 'PROBLEMA1' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   10 into depth [1][2]
+                                   9            [1][2][3]
+                                   8            [1][2][3][4][5][6][7]
+                                   7            [1][2]
+                                   6            [1][2][3][4][5][6][7]
+                                   5            [1][2][3][4]
+                                   4            [1][2]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: TURN-RIGHT PLAYER1 N
+        1: GO PLAYER1 E Z2 Z3
+        2: TURN-LEFT PLAYER1 E
+        3: GO PLAYER1 N Z3 Z1
+        4: TURN-RIGHT PLAYER1 N
+        5: TURN-RIGHT PLAYER1 E
+        6: GO PLAYER1 S Z1 Z3
+        7: GO PLAYER1 S Z3 Z6
+        8: TURN-RIGHT PLAYER1 S
+        9: GO PLAYER1 W Z6 Z5
+       10: TURN-RIGHT PLAYER1 W
+       11: PICK-UP PLAYER1 OSCAR1 Z5
+       12: TURN-RIGHT PLAYER1 N
+       13: GO PLAYER1 E Z5 Z6
+       14: GO PLAYER1 E Z6 Z7
+       15: TURN-RIGHT PLAYER1 E
+       16: TURN-RIGHT PLAYER1 S
+       17: GIVE PLAYER1 OSCAR1 Z7 PRINCESA1
+       18: GO PLAYER1 W Z7 Z6
+       19: TURN-RIGHT PLAYER1 W
+       20: GO PLAYER1 N Z6 Z3
+       21: TURN-RIGHT PLAYER1 N
+       22: GO PLAYER1 E Z3 Z4
+       23: TURN-LEFT PLAYER1 E
+       24: PICK-UP PLAYER1 MANZANA1 Z4
+       25: TURN-LEFT PLAYER1 N
+       26: GO PLAYER1 W Z4 Z3
+       27: TURN-RIGHT PLAYER1 W
+       28: GO PLAYER1 N Z3 Z1
+       29: GIVE PLAYER1 MANZANA1 Z1 BRUJA1
+     		Coste Total: 0.00
+
+
+time spent:    0.00 seconds instantiating 76 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 32 facts and 52 actions
+               0.00 seconds creating final representation with 30 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 85 states, to a max depth of 7
+               0.00 seconds total time
+

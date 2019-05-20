@@ -1,0 +1,132 @@
+
+ff: parsing domain file
+domain 'EJERCICIO4' defined
+ ... done.
+ff: parsing problem file
+problem 'PROBLEMA2' defined
+ ... done.
+
+
+
+no optimization required. skipping criterion.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   26 into depth [1]
+                                  21            [1]
+                                  11            [1]
+                                  10            [1][2][3][4][5]
+                                   8            [1]
+                                   7            [1]
+                                   6            [1]
+                                   5            [1]
+                                   4            [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20][21][22][23]
+                                   3            [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19]
+                                   2            [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20][21][22][23][24][25][26][27][28][29][30]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: GO ROBOT N Z13 Z8
+        1: GO ROBOT N Z8 Z3
+        2: TURN-RIGHT ROBOT N
+        3: GO ROBOT E Z3 Z4
+        4: TURN-RIGHT ROBOT E
+        5: GO ROBOT S Z4 Z9
+        6: TURN-LEFT ROBOT S
+        7: GO ROBOT E Z9 Z10
+        8: TURN-RIGHT ROBOT E
+        9: TURN-RIGHT ROBOT S
+       10: PICK-UP ROBOT ROSA Z10
+       11: GO ROBOT W Z10 Z9
+       12: GIVE ROBOT ROSA Z9 PRINCESA
+       13: TURN-RIGHT ROBOT W
+       14: GO ROBOT N Z9 Z4
+       15: TURN-LEFT ROBOT N
+       16: GO ROBOT W Z4 Z3
+       17: TURN-LEFT ROBOT W
+       18: GO ROBOT S Z3 Z8
+       19: GO ROBOT S Z8 Z13
+       20: GO ROBOT S Z13 Z18
+       21: TURN-RIGHT ROBOT S
+       22: TURN-RIGHT ROBOT W
+       23: PICK-UP ROBOT BIKINI Z18
+       24: GO ROBOT N Z18 Z13
+       25: GO ROBOT N Z13 Z8
+       26: PUT-IN-BAG ROBOT BIKINI
+       27: TURN-LEFT ROBOT N
+       28: GO ROBOT W Z8 Z7
+       29: TURN-LEFT ROBOT W
+       30: TURN-LEFT ROBOT S
+       31: PICK-UP ROBOT MANZANA Z7
+       32: GO ROBOT E Z7 Z8
+       33: TURN-LEFT ROBOT E
+       34: GO ROBOT N Z8 Z3
+       35: GIVE ROBOT MANZANA Z3 BRUJA
+       36: TURN-RIGHT ROBOT N
+       37: TURN-RIGHT ROBOT E
+       38: GO ROBOT S Z3 Z8
+       39: TURN-RIGHT ROBOT S
+       40: GO ROBOT W Z8 Z7
+       41: TURN-RIGHT ROBOT W
+       42: GO ROBOT N Z7 Z2
+       43: TURN-RIGHT ROBOT N
+       44: TURN-RIGHT ROBOT E
+       45: PICK-UP ROBOT ORO Z2
+       46: GO ROBOT S Z2 Z7
+       47: TURN-LEFT ROBOT S
+       48: GO ROBOT E Z7 Z8
+       49: TURN-RIGHT ROBOT E
+       50: GO ROBOT S Z8 Z13
+       51: TURN-RIGHT ROBOT S
+       52: GO ROBOT W Z13 Z12
+       53: GO ROBOT W Z12 Z11
+       54: GIVE ROBOT ORO Z11 PRINCIPE
+       55: TURN-RIGHT ROBOT W
+       56: TURN-RIGHT ROBOT N
+       57: GO ROBOT E Z11 Z12
+       58: TURN-RIGHT ROBOT E
+       59: TURN-RIGHT ROBOT S
+       60: PICK-UP ROBOT ALGORITMO Z12
+       61: GO ROBOT W Z12 Z11
+       62: GIVE ROBOT ALGORITMO Z11 PRINCIPE
+       63: TURN-LEFT ROBOT W
+       64: GO ROBOT S Z11 Z16
+       65: TURN-LEFT ROBOT S
+       66: TURN-LEFT ROBOT E
+       67: PICK-UP ROBOT ZAPAS Z16
+       68: GO ROBOT N Z16 Z11
+       69: TURN-RIGHT ROBOT N
+       70: GO ROBOT E Z11 Z12
+       71: GO ROBOT E Z12 Z13
+       72: GO ROBOT E Z13 Z14
+       73: TURN-RIGHT ROBOT E
+       74: DROP ROBOT ZAPAS Z14
+       75: TURN-RIGHT ROBOT S
+       76: PICK-UP ROBOT OSCAR Z14
+       77: GO ROBOT W Z14 Z13
+       78: GO ROBOT W Z13 Z12
+       79: TURN-LEFT ROBOT W
+       80: GO ROBOT S Z12 Z17
+       81: GO ROBOT S Z17 Z22
+       82: TURN-RIGHT ROBOT S
+       83: GO ROBOT W Z22 Z21
+       84: GIVE ROBOT OSCAR Z21 DICAPRIO
+     		Coste Total: 0.00
+
+
+time spent:    0.00 seconds instantiating 1044 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 200 facts and 383 actions
+               0.00 seconds creating final representation with 195 relevant facts, 2 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.02 seconds searching, evaluating 1381 states, to a max depth of 30
+               0.02 seconds total time
+

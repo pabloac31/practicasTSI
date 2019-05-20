@@ -1,0 +1,138 @@
+
+ff: parsing domain file
+domain 'EJERCICIO6' defined
+ ... done.
+ff: parsing problem file
+problem 'PROBLEMA1' defined
+ ... done.
+
+
+
+no optimization required. skipping criterion.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   26 into depth [1]
+                                  24            [1]
+                                  22            [1][2][3][4]
+                                  21            [1][2]
+                                  20            [1]
+                                  19            [1][2][3][4][5]
+                                  16            [1]
+                                  15            [1]
+                                  14            [1]
+                                  13            [1][2]
+                                  11            [1][2][3]
+                                  10            [1]
+                                   9            [1]
+                                   8            [1]
+                                   7            [1]
+                                   5            [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17]
+                                   4            [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20][21][22][23]
+                                   3            [1]
+                                   2            [1] --- pruning stopped --- [1][2][3][4][5][6][7][8][9][10][11][12][13][14][15]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: TURN-LEFT PLAYER2 N
+        1: TURN-RIGHT PLAYER1 N
+        2: TURN-LEFT PLAYER2 W
+        3: TURN-LEFT PLAYER2 S
+        4: GO PLAYER2 E Z6 Z7
+        5: TURN-RIGHT PLAYER1 E
+        6: TURN-LEFT PLAYER2 E
+        7: GO PLAYER1 S Z1 Z2
+        8: GO PLAYER2 N Z7 Z2
+        9: GO PLAYER1 S Z2 Z7
+       10: TURN-RIGHT PLAYER1 S
+       11: TURN-RIGHT PLAYER1 W
+       12: PICK-UP PLAYER1 ZAPAS Z7
+       13: GO PLAYER1 N Z7 Z2
+       14: DROP PLAYER1 ZAPAS Z2
+       15: TURN-RIGHT PLAYER1 N
+       16: TURN-RIGHT PLAYER2 N
+       17: PICK-UP PLAYER1 ZAPAS Z2
+       18: PUT-IN-BAG PLAYER1 ZAPAS
+       19: GO PLAYER1 E Z2 Z3
+       20: GO PLAYER1 E Z3 Z4
+       21: TURN-RIGHT PLAYER1 E
+       22: TURN-RIGHT PLAYER1 S
+       23: PICK-UP PLAYER1 MANZANA Z4
+       24: GO PLAYER1 W Z4 Z3
+       25: GO PLAYER1 W Z3 Z2
+       26: GIVE PLAYER1 MANZANA Z2 BRUJA
+       27: TURN-LEFT PLAYER1 W
+       28: GO PLAYER1 S Z2 Z7
+       29: TURN-RIGHT PLAYER2 E
+       30: GO PLAYER2 S Z2 Z7
+       31: TURN-RIGHT PLAYER2 S
+       32: GO PLAYER2 W Z7 Z6
+       33: TURN-LEFT PLAYER2 W
+       34: GO PLAYER2 S Z6 Z9
+       35: TURN-LEFT PLAYER2 S
+       36: TURN-LEFT PLAYER2 E
+       37: PICK-UP PLAYER2 OSCAR Z9
+       38: GO PLAYER2 N Z9 Z6
+       39: TURN-RIGHT PLAYER2 N
+       40: GO PLAYER2 E Z6 Z7
+       41: TURN-LEFT PLAYER2 E
+       42: GO PLAYER2 N Z7 Z2
+       43: GIVE PLAYER2 OSCAR Z2 BRUJA
+       44: TURN-RIGHT PLAYER2 N
+       45: GO PLAYER2 E Z2 Z3
+       46: TURN-RIGHT PLAYER2 E
+       47: PICK-UP PLAYER2 BIKINI Z3
+       48: TURN-RIGHT PLAYER2 S
+       49: GO PLAYER2 W Z3 Z2
+       50: TURN-LEFT PLAYER2 W
+       51: GO PLAYER2 S Z2 Z7
+       52: TURN-RIGHT PLAYER2 S
+       53: GO PLAYER2 W Z7 Z6
+       54: TURN-LEFT PLAYER2 W
+       55: PUT-IN-BAG PLAYER2 BIKINI
+       56: GO PLAYER2 S Z6 Z9
+       57: TURN-LEFT PLAYER2 S
+       58: GO PLAYER2 E Z9 Z10
+       59: TURN-RIGHT PLAYER2 E
+       60: TURN-RIGHT PLAYER2 S
+       61: PICK-UP PLAYER2 ALGORITMO Z10
+       62: GO PLAYER2 W Z10 Z9
+       63: TURN-RIGHT PLAYER2 W
+       64: GO PLAYER2 N Z9 Z6
+       65: TURN-RIGHT PLAYER2 N
+       66: GO PLAYER2 E Z6 Z7
+       67: TAKE-OUT-BAG PLAYER1 ZAPAS
+       68: TURN-RIGHT PLAYER2 E
+       69: DROP PLAYER2 ALGORITMO Z7
+       70: DROP PLAYER1 ZAPAS Z7
+       71: TURN-RIGHT PLAYER2 S
+       72: TAKE-OUT-BAG PLAYER2 BIKINI
+       73: DROP PLAYER2 BIKINI Z7
+       74: PICK-UP PLAYER2 ZAPAS Z7
+       75: PUT-IN-BAG PLAYER2 ZAPAS
+       76: PICK-UP PLAYER2 ALGORITMO Z7
+       77: GO PLAYER2 W Z7 Z6
+       78: TURN-LEFT PLAYER2 W
+       79: GO PLAYER2 S Z6 Z9
+       80: TURN-RIGHT PLAYER2 S
+       81: GO PLAYER2 W Z9 Z8
+       82: GIVE PLAYER2 ALGORITMO Z8 PROFE
+     		Coste Total: 0.00
+
+
+time spent:    0.00 seconds instantiating 452 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 102 facts and 266 actions
+               0.00 seconds creating final representation with 99 relevant facts, 7 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               2.16 seconds searching, evaluating 144692 states, to a max depth of 23
+               2.16 seconds total time
+
